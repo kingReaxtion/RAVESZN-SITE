@@ -1,1 +1,203 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Raveszn</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <script src="https://kit.fontawesome.com/6d2ea823d0.js" crossorigin="anonymous"></script>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:'Poppins',sans-serif;
+      background:black;
+      overflow-x:hidden;
+      color:white;
+    }
+
+    .navbar{
+      width:100%;
+      position:fixed;
+      top:0;
+      left:0;
+      padding:20px 30px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      background:black;
+      z-index:1000;
+      border-bottom:2px solid #00bfff;
+    }
+
+    .logo{
+      width:220px;
+    }
+
+    .menu{
+      font-size:38px;
+      color:#00bfff;
+      cursor:pointer;
+    }
+
+    .hero{
+      width:100%;
+      min-height:100vh;
+      background:
+      linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.45)),
+      url('https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?q=80&w=1400&auto=format&fit=crop');
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding:140px 20px 60px;
+      position:relative;
+    }
+
+    .content{
+      max-width:700px;
+    }
+
+    .signup-btn{
+      display:inline-block;
+      background:white;
+      color:#00bfff;
+      padding:14px 40px;
+      border-radius:20px;
+      font-size:32px;
+      font-weight:700;
+      text-decoration:none;
+      margin-bottom:35px;
+      transition:0.3s;
+    }
+
+    .signup-btn:hover{
+      transform:scale(1.05);
+    }
+
+    .socials{
+      display:flex;
+      justify-content:center;
+      gap:35px;
+      margin-top:10px;
+      margin-bottom:70px;
+      flex-wrap:wrap;
+    }
+
+    .socials a{
+      color:white;
+      font-size:48px;
+      transition:0.3s;
+    }
+
+    .socials a:hover{
+      color:#00bfff;
+      transform:translateY(-5px);
+    }
+
+    .bottom-logo{
+      width:420px;
+      max-width:90%;
+    }
+
+    footer{
+      background:black;
+      text-align:center;
+      padding:20px;
+      font-size:14px;
+      color:#ccc;
+      border-top:2px solid #00bfff;
+    }
+
+    @media(max-width:768px){
+
+      .logo{
+        width:170px;
+      }
+
+      .signup-btn{
+        font-size:24px;
+        padding:12px 30px;
+      }
+
+      .socials a{
+        font-size:38px;
+      }
+
+      .bottom-logo{
+        width:300px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+
+    <!-- YOUR LOGO -->
+    <img src="logo.png" class="logo">
+
+    <!-- HAMBURGER MENU -->
+    <div class="menu">
+      ☰
+    </div>
+
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+
+    <div class="content">
+
+      <!-- BUTTON -->
+      <a href="#" class="signup-btn">
+        Sign Up
+      </a>
+
+      <!-- SOCIAL ICONS -->
+      <div class="socials">
+
+        <!-- TikTok -->
+        <a href="https://www.tiktok.com/@rxveszn" target="_blank">
+          <i class="fab fa-tiktok"></i>
+        </a>
+
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/ravenrayrojdo" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+
+        <!-- VSCO -->
+        <a href="https://vsco.co/raveszn" target="_blank">
+          <i class="fas fa-camera"></i>
+        </a>
+
+      </div>
+
+      <!-- BIG LOGO -->
+      <img src="logo.png" class="bottom-logo">
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    Copyright © 2026 Raveszn | Privacy | Cookie Policy | Help Support
+  </footer>
+
+</body>
+</html>
